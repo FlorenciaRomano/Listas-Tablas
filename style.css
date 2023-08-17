@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bg_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+header, nav{
+    min-height: 4vh;
+    text-align: center;
+    background-color: rgba(150, 106, 150, 0.507) !important;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+main{
+    min-height: 92vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+table{
+    background-color: rgb(182, 147, 182);
+    width: 60%;
+    font-size: 20px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse:collapse
+}
+
+td{
+    padding: 10px;
+}
+
+
+
+.first td:nth-child(3){
+    background-color: red;
+}
+.second td:nth-child(2){
+    background-color: red;
+}
+.third td:nth-child(2){
+    background-color: red;
+}
+
+
+
+.box_list {
+    color: rgb(174, 101, 174);
+    background-color: rgba(0, 0, 0, 0.822);
+    font-size: 1.2rem;
+    width: 300px;
+    height: 600px;
+    padding: 50px;
+    border-radius: 8px;    
+}
+
+dl dt {
+    font-weight: 900;
+}
+
+ul{
+    /* list-style-type:circle; */
+    /* list-style-type: square; */
+    /* list-style-type: none; */
+ /* list-style-type: lower-alpha; */
+
+}
+
+/* pseudoclase que coincide con los elementos en función
+ a su posicion entre un grupo de hermanos */
+
+ ul li:nth-child(1){
+ list-style-type:none;
+ }
+
+
+ol{
+ list-style-type: decimal-leading-zero;
+}
